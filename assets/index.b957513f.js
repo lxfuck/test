@@ -13149,7 +13149,7 @@ const Vg = () => {
     }, {
         type: "subMenu",
         label: "Combat",
-        icon: "fa-solid fa-wrench"
+        icon: "fa-solid fa-burst"
     }, {
         type: "subMenu",
         label: "Vehicle",
