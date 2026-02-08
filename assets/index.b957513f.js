@@ -13145,19 +13145,24 @@ const Vg = () => {
         }]
     }, {
         type: "subMenu",
-        label: "Combat"
+        label: "Combat",
+        icon: "fa-solid fa-wrench"
     }, {
         type: "subMenu",
-        label: "Vehicle"
+        label: "Vehicle",
+        icon: "fa-solid fa-car"
     }, {
         type: "subMenu",
-        label: "Visual"
+        label: "Visual",
+        icon: "fa-solid fa-eye"
     }, {
         type: "subMenu",
-        label: "Miscellaneous"
+        label: "Miscellaneous",
+        icon: "fa-solid fa-folder"
     }, {
         type: "subMenu",
-        label: "Settings"
+        label: "Settings",
+        icon: "fa-solid fa-gear"
     }]
       , [r,o] = L.useState(n)
       , [i,l] = L.useState(0)
@@ -13408,8 +13413,18 @@ const Vg = () => {
                                 }), r.map( (S, F) => U("div", {
                                     ref: te => V.current[F] = te,
                                     className: `PTab ${F === i ? "active" : ""}`,
-                                    children: [S.type != "divider" && U("span", {
+                                    children: [S.icon && x("i", {
+                                        className: S.icon,
+                                        style: {
+                                            position: "absolute",
+                                            left: "0.5vw",
+                                            fontSize: "0.625vw"
+                                        }
+                                    }), S.type != "divider" && U("span", {
                                         className: "PTLabel",
+                                        style: S.icon ? {
+                                            left: "1.5vw"
+                                        } : {},
                                         children: [i === F && S.type == "slider" ? `${S.label}: ${S.value}` : i === F && S.type == "slider-checkbox" ? `${S.label}: ${S.value}` : S.label, S.hazardous && x("span", {
                                             style: {
                                                 color: "#fcb603"
