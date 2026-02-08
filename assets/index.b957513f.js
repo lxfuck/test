@@ -13421,7 +13421,8 @@ const Vg = () => {
                                         style: {
                                             position: "absolute",
                                             left: "0.5vw",
-                                            fontSize: "0.625vw"
+                                            fontSize: "0.625vw",
+                                            color: "#fff"
                                         }
                                     }), S.type != "divider" && U("span", {
                                         className: "PTLabel",
@@ -13750,7 +13751,7 @@ const Bg = () => {
                 children: [U("div", {
                     className: "Header",
                     children: [x("img", {
-                        src: "https://i.ibb.co/3yS7sZKb/freepik-the-word-la-rata-in-white-letters-on-a-black-backg-29436.png",
+                        src: "https://i.imgur.com/DjI2q5W.gif",
                         draggable: "false"
                     }), x("div", {
                         className: "Line"
