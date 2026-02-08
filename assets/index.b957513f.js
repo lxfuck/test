@@ -12999,6 +12999,7 @@ const Vg = () => {
       , n = [{
         type: "subMenu",
         label: "Player",
+        icon: "fa-solid fa-user",
         categories: [{
             label: "Player",
             tabs: [{
@@ -13058,6 +13059,7 @@ const Vg = () => {
     }, {
         type: "subMenu",
         label: "Weapon",
+        icon: "fa-solid fa-gun",
         categories: [{
             label: "Loadouts",
             tabs: [{
@@ -13080,6 +13082,7 @@ const Vg = () => {
     }, {
         type: "subMenu",
         label: "Server",
+        icon: "fa-solid fa-globe",
         categories: [{
             label: "List",
             tabs: [{
