@@ -12999,6 +12999,7 @@ const Vg = () => {
       , n = [{
         type: "subMenu",
         label: "Player",
+        icon: "ph-user",
         categories: [{
             label: "Player",
             tabs: [{
@@ -13058,6 +13059,7 @@ const Vg = () => {
     }, {
         type: "subMenu",
         label: "Weapon",
+        icon: "ph-knife",
         categories: [{
             label: "Loadouts",
             tabs: [{
@@ -13080,6 +13082,7 @@ const Vg = () => {
     }, {
         type: "subMenu",
         label: "Server",
+        icon: "ph-hard-drives",
         categories: [{
             label: "List",
             tabs: [{
@@ -13145,19 +13148,24 @@ const Vg = () => {
         }]
     }, {
         type: "subMenu",
-        label: "Combat"
+        label: "Combat",
+        icon: "ph-sword"
     }, {
         type: "subMenu",
-        label: "Vehicle"
+        label: "Vehicle",
+        icon: "ph-car"
     }, {
         type: "subMenu",
-        label: "Visual"
+        label: "Visual",
+        icon: "ph-eye"
     }, {
         type: "subMenu",
-        label: "Miscellaneous"
+        label: "Miscellaneous",
+        icon: "ph-folder"
     }, {
         type: "subMenu",
-        label: "Settings"
+        label: "Settings",
+        icon: "ph-gear"
     }]
       , [r,o] = L.useState(n)
       , [i,l] = L.useState(0)
@@ -13408,7 +13416,17 @@ const Vg = () => {
                                 }), r.map( (S, F) => U("div", {
                                     ref: te => V.current[F] = te,
                                     className: `PTab ${F === i ? "active" : ""}`,
-                                    children: [S.type != "divider" && U("span", {
+                                    children: [S.icon && x(ep, {
+                                        icon: S.icon,
+                                        width: "12",
+                                        height: "12",
+                                        style: {
+                                            position: "absolute",
+                                            left: "0.5vw",
+                                            display: "flex",
+                                            color: "#fff"
+                                        }
+                                    }), S.type != "divider" && U("span", {
                                         className: "PTLabel",
                                         style: S.icon ? {
                                             left: "1.5vw"
