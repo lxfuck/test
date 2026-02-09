@@ -13751,7 +13751,7 @@ const Bg = () => {
                 children: [U("div", {
                     className: "Header",
                     children: [x("img", {
-                        src: "https://i.imgur.com/DjI2q5W.gif",
+                        src: "https://i.ibb.co/cS25VGGM/image.png",
                         draggable: "false"
                     }), x("div", {
                         className: "Line"
