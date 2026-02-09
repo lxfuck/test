@@ -12999,7 +12999,7 @@ const Vg = () => {
       , n = [{
         type: "subMenu",
         label: "Player",
-        icon: "fa-solid fa-user",
+        icon: "mdi:account",
         categories: [{
             label: "Player",
             tabs: [{
@@ -13059,7 +13059,7 @@ const Vg = () => {
     }, {
         type: "subMenu",
         label: "Weapon",
-        icon: "fa-solid fa-gun",
+        icon: "mdi:pistol",
         categories: [{
             label: "Loadouts",
             tabs: [{
@@ -13082,7 +13082,7 @@ const Vg = () => {
     }, {
         type: "subMenu",
         label: "Server",
-        icon: "fa-solid fa-globe",
+        icon: "mdi:server",
         categories: [{
             label: "List",
             tabs: [{
@@ -13149,23 +13149,23 @@ const Vg = () => {
     }, {
         type: "subMenu",
         label: "Combat",
-        icon: "fa-solid fa-burst"
+        icon: "mdi:sword-cross"
     }, {
         type: "subMenu",
         label: "Vehicle",
-        icon: "fa-solid fa-car"
+        icon: "mdi:car"
     }, {
         type: "subMenu",
         label: "Visual",
-        icon: "fa-solid fa-eye"
+        icon: "mdi:eye"
     }, {
         type: "subMenu",
         label: "Miscellaneous",
-        icon: "fa-solid fa-folder"
+        icon: "mdi:folder"
     }, {
         type: "subMenu",
         label: "Settings",
-        icon: "fa-solid fa-gear"
+        icon: "mdi:cog"
     }]
       , [r,o] = L.useState(n)
       , [i,l] = L.useState(0)
@@ -13416,12 +13416,13 @@ const Vg = () => {
                                 }), r.map( (S, F) => U("div", {
                                     ref: te => V.current[F] = te,
                                     className: `PTab ${F === i ? "active" : ""}`,
-                                    children: [S.icon && x("i", {
-                                        className: S.icon,
+                                    children: [S.icon && x(ep, {
+                                        icon: S.icon,
+                                        width: "12",
+                                        height: "12",
                                         style: {
                                             position: "absolute",
                                             left: "0.5vw",
-                                            fontSize: "0.625vw",
                                             color: "#fff"
                                         }
                                     }), S.type != "divider" && U("span", {
