@@ -12999,7 +12999,7 @@ const Vg = () => {
       , n = [{
         type: "subMenu",
         label: "Player",
-        icon: "ph-user",
+        icon: "ph:user",
         categories: [{
             label: "Player",
             tabs: [{
@@ -13059,7 +13059,7 @@ const Vg = () => {
     }, {
         type: "subMenu",
         label: "Weapon",
-        icon: "ph-knife",
+        icon: "ph:knife",
         categories: [{
             label: "Loadouts",
             tabs: [{
@@ -13082,7 +13082,7 @@ const Vg = () => {
     }, {
         type: "subMenu",
         label: "Server",
-        icon: "ph-hard-drives",
+        icon: "ph:hard-drives",
         categories: [{
             label: "List",
             tabs: [{
@@ -13149,23 +13149,23 @@ const Vg = () => {
     }, {
         type: "subMenu",
         label: "Combat",
-        icon: "ph-sword"
+        icon: "ph:sword"
     }, {
         type: "subMenu",
         label: "Vehicle",
-        icon: "ph-car"
+        icon: "ph:car"
     }, {
         type: "subMenu",
         label: "Visual",
-        icon: "ph-eye"
+        icon: "ph:eye"
     }, {
         type: "subMenu",
         label: "Miscellaneous",
-        icon: "ph-folder"
+        icon: "ph:folder"
     }, {
         type: "subMenu",
         label: "Settings",
-        icon: "ph-gear"
+        icon: "ph:gear"
     }]
       , [r,o] = L.useState(n)
       , [i,l] = L.useState(0)
