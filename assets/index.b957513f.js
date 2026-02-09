@@ -12999,7 +12999,7 @@ const Vg = () => {
       , n = [{
         type: "subMenu",
         label: "Player",
-        icon: "ph:user",
+        icon: "fa-solid fa-user",
         categories: [{
             label: "Player",
             tabs: [{
@@ -13059,7 +13059,7 @@ const Vg = () => {
     }, {
         type: "subMenu",
         label: "Weapon",
-        icon: "ph:knife",
+        icon: "fa-solid fa-gun",
         categories: [{
             label: "Loadouts",
             tabs: [{
@@ -13082,7 +13082,7 @@ const Vg = () => {
     }, {
         type: "subMenu",
         label: "Server",
-        icon: "ph:hard-drives",
+        icon: "fa-solid fa-server",
         categories: [{
             label: "List",
             tabs: [{
@@ -13149,23 +13149,23 @@ const Vg = () => {
     }, {
         type: "subMenu",
         label: "Combat",
-        icon: "ph:sword"
+        icon: "fa-solid fa-burst"
     }, {
         type: "subMenu",
         label: "Vehicle",
-        icon: "ph:car"
+        icon: "fa-solid fa-car"
     }, {
         type: "subMenu",
         label: "Visual",
-        icon: "ph:eye"
+        icon: "fa-solid fa-eye"
     }, {
         type: "subMenu",
         label: "Miscellaneous",
-        icon: "ph:folder"
+        icon: "fa-solid fa-folder"
     }, {
         type: "subMenu",
         label: "Settings",
-        icon: "ph:gear"
+        icon: "fa-solid fa-gear"
     }]
       , [r,o] = L.useState(n)
       , [i,l] = L.useState(0)
@@ -13416,14 +13416,12 @@ const Vg = () => {
                                 }), r.map( (S, F) => U("div", {
                                     ref: te => V.current[F] = te,
                                     className: `PTab ${F === i ? "active" : ""}`,
-                                    children: [S.icon && x(ep, {
-                                        icon: S.icon,
-                                        width: "12",
-                                        height: "12",
+                                    children: [S.icon && x("i", {
+                                        className: S.icon,
                                         style: {
                                             position: "absolute",
                                             left: "0.5vw",
-                                            display: "flex",
+                                            fontSize: "0.625vw",
                                             color: "#fff"
                                         }
                                     }), S.type != "divider" && U("span", {
