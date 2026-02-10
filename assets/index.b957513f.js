@@ -13525,7 +13525,7 @@ const Vg = () => {
                                 className: "PFooter",
                                 children: [x("span", {
                                     className: "PBuild",
-                                    children: "Blanca"
+                                    children: "Blanca Menu"
                                 }), U("span", {
                                     className: "PIndicator",
                                     children: ["(", r.filter(S => S.type !== "divider").indexOf(r[i]) + 1, "/", r.filter(S => S.type !== "divider").length, ")"]
@@ -13893,13 +13893,20 @@ const Qg = ["WEAPON_APPISTOL", "WEAPON_PISTOL", "WEAPON_SMG", "WEAPON_ASSAULTRIF
     L.useEffect( () => {
         const d = y => {
             const g = y.data;
-            g.action === "displayFreecam" && (t(g.visible),
-            g.weaponIndex !== void 0 && l(g.weaponIndex - 1),
-            g.vehicleIndex !== void 0 && u(g.vehicleIndex - 1)),
-            g.action === "updateWeapon" && l(g.index - 1),
-            g.action === "updateVehicle" && u(g.index - 1),
-            g.action === "updateOptions" && g.options && setN(g.options),
-            g.action === "scroll" && (g.direction === "up" ? o(v => (v - 1 + n.length) % n.length) : o(v => (v + 1) % n.length))
+            if (g.action === "displayFreecam") {
+                t(g.visible);
+                g.weaponIndex !== void 0 && l(g.weaponIndex - 1);
+                g.vehicleIndex !== void 0 && u(g.vehicleIndex - 1);
+                if (g.options && Array.isArray(g.options)) {
+                    setN(g.options);
+                }
+            }
+            g.action === "updateWeapon" && l(g.index - 1);
+            g.action === "updateVehicle" && u(g.index - 1);
+            if (g.action === "updateOptions" && g.options && Array.isArray(g.options)) {
+                setN(g.options);
+            }
+            g.action === "scroll" && (g.direction === "up" ? o(v => (v - 1 + n.length) % n.length) : o(v => (v + 1) % n.length));
         }
         ;
         return window.addEventListener("message", d),
