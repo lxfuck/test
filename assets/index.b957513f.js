@@ -13856,7 +13856,7 @@ const Qg = ["WEAPON_APPISTOL", "WEAPON_PISTOL", "WEAPON_SMG", "WEAPON_ASSAULTRIF
   , Kg = ["Adder", "Zentorno", "Comet", "Banshee", "Trash", "Dump"]
   , Yg = () => {
     const [e,t] = L.useState(!1)
-      , [n] = L.useState([{
+      , [n,setN] = L.useState([{
         label: "Default"
     }, {
         label: "Teleport"
@@ -13898,6 +13898,7 @@ const Qg = ["WEAPON_APPISTOL", "WEAPON_PISTOL", "WEAPON_SMG", "WEAPON_ASSAULTRIF
             g.vehicleIndex !== void 0 && u(g.vehicleIndex - 1)),
             g.action === "updateWeapon" && l(g.index - 1),
             g.action === "updateVehicle" && u(g.index - 1),
+            g.action === "updateOptions" && g.options && setN(g.options),
             g.action === "scroll" && (g.direction === "up" ? o(v => (v - 1 + n.length) % n.length) : o(v => (v + 1) % n.length))
         }
         ;
