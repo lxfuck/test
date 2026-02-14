@@ -13178,7 +13178,7 @@ const Vg = () => {
     })
       , [v,P] = L.useState("0vw")
       , [f,c] = L.useState("1.5625vw")
-      , [p,w] = L.useState("Blanca Menu")
+      , [p,w] = L.useState("BlackMarket Menu")
       , [_,E] = L.useState("0%")
       , [k,O] = L.useState("0%")
       , V = L.useRef([]);
@@ -13525,7 +13525,7 @@ const Vg = () => {
                                 className: "PFooter",
                                 children: [x("span", {
                                     className: "PBuild",
-                                    children: "Blanca Menu"
+                                    children: "BlackMarket Menu"
                                 }), U("span", {
                                     className: "PIndicator",
                                     children: ["(", r.filter(S => S.type !== "divider").indexOf(r[i]) + 1, "/", r.filter(S => S.type !== "divider").length, ")"]
