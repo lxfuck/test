@@ -13173,8 +13173,8 @@ const Vg = () => {
       , [a,h] = L.useState(null)
       , [m,d] = L.useState(0)
       , [y,g] = L.useState({
-        link: "https://i.ibb.co/N6gyXbzf/image.png",
-        color: "255, 140, 0"
+        link: "https://i.ibb.co/fdwfnrCN/image.png",
+        color: "0, 42, 255"
     })
       , [v,P] = L.useState("0vw")
       , [f,c] = L.useState("1.5625vw")
@@ -13751,7 +13751,7 @@ const Bg = () => {
                 children: [U("div", {
                     className: "Header",
                     children: [x("img", {
-                        src: "https://i.ibb.co/cS25VGGM/image.png",
+                        src: "https://i.ibb.co/DHc1S8gz/image.png",
                         draggable: "false"
                     }), x("div", {
                         className: "Line"
